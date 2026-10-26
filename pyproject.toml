@@ -3,7 +3,11 @@ name = "allocator"
 version = "0.1.0"
 description = "Allocates finance back-office process steps to script, AI call, agent or human."
 requires-python = ">=3.11"
-dependencies = []
+dependencies = [
+    "anthropic>=2.3",
+    "pydantic>=2",
+    "streamlit>=1.40",
+]
 
 [project.optional-dependencies]
 dev = ["pytest>=8"]

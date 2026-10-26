@@ -1,0 +1,23 @@
+{
+  "steps": [
+    {"number": 1, "name": "Match invoice to PO", "description": "Fixture step, hand-written for tests.",
+     "variability": {"score": "1", "reason": "Structured fields.", "quote": ""},
+     "error_cost": {"score": "1", "reason": "Fixture.", "quote": ""},
+     "verifiability": {"score": "1", "reason": "Fixture.", "quote": ""},
+     "accountability": {"score": "1", "reason": "Fixture.", "quote": ""},
+     "access_risk": {"score": "1", "reason": "Fixture.", "quote": ""}},
+    {"number": 2, "name": "Investigate mismatch", "description": "Fixture step, hand-written for tests.",
+     "variability": {"score": "3", "reason": "Path depends on findings.", "quote": ""},
+     "error_cost": {"score": "2", "reason": "Fixture.", "quote": ""},
+     "verifiability": {"score": "2", "reason": "Fixture.", "quote": ""},
+     "accountability": {"score": "1", "reason": "Fixture.", "quote": ""},
+     "access_risk": {"score": "2", "reason": "Fixture.", "quote": ""}},
+    {"number": 3, "name": "Approve payment", "description": "Fixture step, hand-written for tests.",
+     "variability": {"score": "1", "reason": "Fixture.", "quote": ""},
+     "error_cost": {"score": "3", "reason": "Fixture.", "quote": ""},
+     "verifiability": {"score": "unknown", "reason": "Text does not say.", "quote": ""},
+     "accountability": {"score": "3", "reason": "Approval authority.", "quote": ""},
+     "access_risk": {"score": "3", "reason": "Fixture.", "quote": ""}}
+  ],
+  "open_questions": ["Fixture question."]
+}
