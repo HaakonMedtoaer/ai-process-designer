@@ -10,13 +10,13 @@ Roles: Script / AI call / Agent / Human. Add "+ review" if a human should check 
 | 2 |  |  |  |
 | 3 | AI call, low confidence -> Human | Same pattern as invoice reading |  |
 | 4 |  |  |  |
-| 5 |  |  |  |
+| 5 | Script | Logic attaches each expense to the correct account |  |
 | 6 |  |  |  |
 | 7 |  |  |  |
 | 8 |  |  |  |
 | 9 |  |  |  |
+| 10 |  |  |  |
 
 ## Notes / unsure about
 
-- Haakon: expenses are attached to the correct account by logic (Script). The case has no account-coding step yet.
 

@@ -18,6 +18,11 @@
 - Hosting: public demo with rate limit vs recording + repo.
 - Name.
 
+## Later features (not in v0.1)
+- Tool proposes new steps, not just roles: invoice firewall (filter incoming invoices before AP:
+  unknown supplier, duplicate, missing PO, fraud signals), invoice enrichment (fill cost centre/coding).
+- Per-item fallback routing (see rubric proposal). Decide if it goes into v0.1 rubric.
+
 ## Gotchas
 - Repo is meant to be public: no employer names, processes or data, and no personal
   job-search notes. The full project brief stays out of the repo for that reason.

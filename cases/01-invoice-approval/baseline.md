@@ -18,6 +18,5 @@ Roles: Script / AI call / Agent / Human. Add "+ review" if a human should check 
 
 ## Notes / unsure about
 
-- Haakon's figure: about 90% of invoices are read correctly. Source of the figure not yet stated.
-- New-step ideas (not in the case yet): invoice firewall, invoice enrichment.
+- Haakon's figure: about 90% of invoices are read correctly. This is Haakon's assumption, not a measurement.
 

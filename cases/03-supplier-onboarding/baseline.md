@@ -7,7 +7,7 @@ Roles: Script / AI call / Agent / Human. Add "+ review" if a human should check 
 | Step | Role | Main reason (one line) | Confidence (low/med/high) |
 |---|---|---|---|
 | 1 |  |  |  |
-| 2 |  |  |  |
+| 2 | Script | New supplier automatically receives process information |  |
 | 3 |  |  |  |
 | 4 |  |  |  |
 | 5 |  |  |  |
@@ -15,8 +15,8 @@ Roles: Script / AI call / Agent / Human. Add "+ review" if a human should check 
 | 7 |  |  |  |
 | 8 |  |  |  |
 | 9 |  |  |  |
+| 10 |  |  |  |
 
 ## Notes / unsure about
 
-- Haakon: a new supplier automatically receives information about the process (auto onboarding, Script). The case has no such step yet.
 
