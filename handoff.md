@@ -28,6 +28,8 @@
 - Model call uses beta server-side fallback (`fallbacks=default`) and effort `medium`.
 - Commits: Claude Code commits on its own at each real, working change. Small, honest messages.
   No backdating, no artificial splitting. Tests must pass before each commit.
+- Branches: `main` is the public default. Work happens on a session branch; merge to main
+  at working milestones, after Haakon says ok.
 - Run tests: `.venv/bin/pip install -e ".[dev]"` then `.venv/bin/pytest`.
 - Repo is meant to be public: no employer names, processes or data, and no personal
   job-search notes. The full project brief stays out of the repo for that reason.
