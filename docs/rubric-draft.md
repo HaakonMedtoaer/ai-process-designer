@@ -1,7 +1,6 @@
-# Allocation rubric (DRAFT v0, for Haakon to edit)
+# Allocation rubric (v0.1, implemented in `src/allocator/rules.py`)
 
-Status: proposal from Claude Code. Nothing here is decided until Haakon signs off.
-Change it freely on paper first; code follows the rubric, not the other way round.
+Status: agreed as a starting point. Change the rubric here first; code follows it.
 
 ## Roles (the ladder)
 
@@ -36,7 +35,7 @@ Gates:
 
 - **G0 Unknown**: any criterion `unknown` -> no allocation, ask the user.
 - **G1 Accountability**: A=3 -> Human owns the decision. AI may prepare inputs (shown as a separate prep step).
-- **G2 Not worth it**: Q=1 and V>=2 -> Human (automation not justified at this volume). Q=1 and V=1 -> Script only if trivially cheap, else Human. *(Open: what counts as "trivially cheap"?)*
+- **G2 Not worth it**: Q=1 -> Human. *(Simplified for v0.1. Open: should a trivially cheap script still win at low volume?)*
 - **G3 Risky and unverifiable**: R=3 and C=3 -> Human.
 
 Ladder (take the lowest rung that fits):
@@ -69,17 +68,18 @@ the test set should tell us.
 - "Under ~2 minutes" for C=2 is an arbitrary number picked as a starting point, not evidence.
 - No rule yet for steps that are really several steps glued together.
 
-## Proposal from baseline round 1: per-item fallback
+## Per-item fallback (agreed, rule F1)
 
 Haakon's baselines use a pattern the rubric above cannot express: an AI call handles
 most items, and items it is unsure about go to a human. That is routing per item,
 not one role per step.
 
-Proposed addition: a step can have a **primary role** and a **fallback role** with a
+A step can have a **primary role** and a **fallback role** with a
 **routing condition**. Example: primary = AI call, fallback = Human, condition =
 "extraction fails a rule check or confidence is below threshold".
 
 - The routing condition should prefer rule checks (totals add up, VAT is correct,
   PO number exists, supplier is known) over the model's own confidence score.
+- v0.1 rule F1: every AI call and agent step gets fallback = Human.
 - The share of items that falls back is a user-supplied assumption. The business case
   must show it as an input and flag it, because the saving depends heavily on it.
