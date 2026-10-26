@@ -68,3 +68,18 @@ the test set should tell us.
 - The 1/2/3 anchors for E and R are judgement calls. Test cases will show where they blur.
 - "Under ~2 minutes" for C=2 is an arbitrary number picked as a starting point, not evidence.
 - No rule yet for steps that are really several steps glued together.
+
+## Proposal from baseline round 1: per-item fallback
+
+Haakon's baselines use a pattern the rubric above cannot express: an AI call handles
+most items, and items it is unsure about go to a human. That is routing per item,
+not one role per step.
+
+Proposed addition: a step can have a **primary role** and a **fallback role** with a
+**routing condition**. Example: primary = AI call, fallback = Human, condition =
+"extraction fails a rule check or confidence is below threshold".
+
+- The routing condition should prefer rule checks (totals add up, VAT is correct,
+  PO number exists, supplier is known) over the model's own confidence score.
+- The share of items that falls back is a user-supplied assumption. The business case
+  must show it as an input and flag it, because the saving depends heavily on it.

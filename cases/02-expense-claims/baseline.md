@@ -1,6 +1,6 @@
 # Baseline allocation
 
-Filled in by: ______  Date: ______  (before running the tool)
+Filled in by: Haakon (partial, transcribed by Claude Code from chat)  Date: 2026-10-26  (before running the tool)
 
 Roles: Script / AI call / Agent / Human. Add "+ review" if a human should check the output.
 
@@ -8,7 +8,7 @@ Roles: Script / AI call / Agent / Human. Add "+ review" if a human should check 
 |---|---|---|---|
 | 1 |  |  |  |
 | 2 |  |  |  |
-| 3 |  |  |  |
+| 3 | AI call, low confidence -> Human | Same pattern as invoice reading |  |
 | 4 |  |  |  |
 | 5 |  |  |  |
 | 6 |  |  |  |
@@ -17,4 +17,6 @@ Roles: Script / AI call / Agent / Human. Add "+ review" if a human should check 
 | 9 |  |  |  |
 
 ## Notes / unsure about
+
+- Haakon: expenses are attached to the correct account by logic (Script). The case has no account-coding step yet.
 

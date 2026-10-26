@@ -1,6 +1,6 @@
 # Baseline allocation
 
-Filled in by: ______  Date: ______  (before running the tool)
+Filled in by: Haakon (partial, transcribed by Claude Code from chat)  Date: 2026-10-26  (before running the tool)
 
 Roles: Script / AI call / Agent / Human. Add "+ review" if a human should check the output.
 
@@ -17,4 +17,6 @@ Roles: Script / AI call / Agent / Human. Add "+ review" if a human should check 
 | 9 |  |  |  |
 
 ## Notes / unsure about
+
+- Haakon: a new supplier automatically receives information about the process (auto onboarding, Script). The case has no such step yet.
 
